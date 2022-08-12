@@ -1,0 +1,22 @@
+name = "cloudflare-auth-service-example"
+main = "src/index.ts"
+compatibility_date = "2022-08-08"
+
+services = [
+  { binding = "AUTH_SERVICE", service = "cloudflare-auth-service" }
+]
+
+
+[dev]
+  # IP address for the local dev server to listen on,
+  # @default `localhost`
+  # ip = ""
+  # Port for the local dev server to listen on
+  # @default `8787`
+  port = 8788
+  # Protocol that local wrangler dev server listens to requests on.
+  # @default `http`
+  # local_protocol = "http" | "https"
+  # Host to forward requests to, defaults to the host of the first route of project
+  # host = # see route in Environments
+
